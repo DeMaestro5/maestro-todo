@@ -6,6 +6,7 @@ export const TodoForm = ({addTodo}) => {
 
     const handleSubmit = e => {
     e.preventDefault();
+    if(value.length < 1) return
     addTodo(value)
     setValue('')
     }
